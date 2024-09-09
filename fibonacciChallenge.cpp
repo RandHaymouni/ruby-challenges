@@ -24,7 +24,21 @@ void generateFibonacci(int n) {
 }
 
 int main() {
-    
+    int n;
+
+    cout << "Enter the number of terms for the Fibonacci sequence: ";
+    while (true) {
+        cin >> n;
+
+        if (cin.fail() || n <= 0) {
+            cout << "Invalid input. Please enter a positive integer: ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else {
+            break;
+        }
+    }
+    generateFibonacci(n);
 
     return 0;
 }
