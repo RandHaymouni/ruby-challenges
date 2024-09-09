@@ -75,5 +75,7 @@ int main() {
         }
     }
 
+    findMissingNumbers(arr, minRange, maxRange);
+
     return 0;
 }
