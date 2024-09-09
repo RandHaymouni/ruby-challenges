@@ -51,5 +51,17 @@ int main() {
         }
     }
 
+    cout << "Enter the minimum range: ";
+    while (true) {
+        cin >> minRange;
+        if (cin.fail()) {
+            cout << "Invalid input. Please enter an integer: ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else {
+            break;
+        }
+    }
+
     return 0;
 }
