@@ -36,5 +36,20 @@ int main() {
         }
     }
 
+    cout << "Enter the numbers in the array: " << endl;
+    for (int i = 0; i < n; i++) {
+        while (true) {
+            cin >> num;
+            if (cin.fail()) {
+                cout << "Invalid input. Please enter an integer: ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+            } else {
+                arr.push_back(num);
+                break;
+            }
+        }
+    }
+
     return 0;
 }
