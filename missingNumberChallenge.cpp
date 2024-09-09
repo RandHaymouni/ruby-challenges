@@ -21,7 +21,20 @@ void findMissingNumbers(vector<int> arr, int minRange, int maxRange) {
 }
 
 int main() {
-  
+    int n, num, minRange, maxRange;
+    vector<int> arr;
+
+    cout << "Enter the number of elements in the array: ";
+    while (true) {
+        cin >> n;
+        if (cin.fail() || n <= 0) {
+            cout << "Invalid input. Please enter a positive integer: ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else {
+            break;
+        }
+    }
 
     return 0;
 }
