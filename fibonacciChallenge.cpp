@@ -25,7 +25,7 @@ void generateFibonacci(int n) {
 
 int main() {
     int n;
-
+    
     cout << "Enter the number of terms for the Fibonacci sequence: ";
     while (true) {
         cin >> n;
