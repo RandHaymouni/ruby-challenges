@@ -63,5 +63,17 @@ int main() {
         }
     }
 
+    cout << "Enter the maximum range: ";
+    while (true) {
+        cin >> maxRange;
+        if (cin.fail() || maxRange < minRange) {
+            cout << "Invalid input. Maximum range must be greater than or equal to minimum range. Please try again: ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else {
+            break;
+        }
+    }
+
     return 0;
 }
